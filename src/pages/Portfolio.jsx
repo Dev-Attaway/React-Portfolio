@@ -1,46 +1,41 @@
-import Project from '../components/Project'; // Assuming Project.js is in the same directory
-
+import Project from "../components/Project"; // Assuming Project.js is in the same directory
 
 export default function Portfolio() {
   return (
-    <div className="portfolio">
-      <h2>Portfolio</h2>
+    <div className="portfolio mx-auto">
+      <div className="projects mb-3">
+        <Project
+          title="Weather App"
+          image="./weather-app-readme-res.png"
+          link="https://dev-attaway.github.io/weather-app/"
+        />
+        <Project
+          title="Fake Store"
+          image="./fake-store.png"
+          link="https://boiling-harbor-15362-4fdcf0c8906a.herokuapp.com/"
+        />
+        <Project
+          title="MVC Tech Blog"
+          image="./MVC-tech-blog.png"
+          link="https://dev-attaway-mvc-hbs-blog-f80032cd86ff.herokuapp.com/"
+        />
+      </div>
+
       <div className="projects">
         <Project
-          title="Project 1"
-          description="This is the first project."
-          image="project1.jpg"
-          technologies={['React', 'JavaScript', 'CSS']}
+          title="Dine and Date"
+          image="./dine-and-date.png"
+          link="https://lexikhecht.github.io/Date-Night/"
         />
         <Project
-          title="Project 2"
-          description="This is the second project."
-          image="project2.jpg"
-          technologies={['Node.js', 'Express', 'MongoDB']}
+          title="SQL Employee Tracker"
+          image="./SQL-employee-tracker.png"
+          link="https://github.com/Dev-Attaway/SQL-employee-tracker"
         />
         <Project
-          title="Project 3"
-          description="This is the second project."
-          image="project2.jpg"
-          technologies={['Node.js', 'Express', 'MongoDB']}
-        />
-        <Project
-          title="Project 4"
-          description="This is the second project."
-          image="project2.jpg"
-          technologies={['Node.js', 'Express', 'MongoDB']}
-        />
-        <Project
-          title="Project 5"
-          description="This is the second project."
-          image="project2.jpg"
-          technologies={['Node.js', 'Express', 'MongoDB']}
-        />
-        <Project
-          title="Project 6"
-          description="This is the second project."
-          image="project2.jpg"
-          technologies={['Node.js', 'Express', 'MongoDB']}
+          title="Work Day Scheduler"
+          image="./scheduler.png"
+          link="https://dev-attaway.github.io/scheduler/"
         />
         {/* Add more Project components as needed */}
       </div>
