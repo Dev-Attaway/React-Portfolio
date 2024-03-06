@@ -1,20 +1,77 @@
+import { useState } from "react";
+
 export default function Contact() {
+  const [form, setForm] = useState({
+    firstName: "",
+    email: "",
+    message: "",
+  });
+
+  const [checkEmail, setCheckEmail] = useState(false);
+  const [CheckName, setCheckName] = useState(false);
+  const [CheckMessage, setCheckMessage] = useState(false);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setForm({
+      ...form,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = () => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const isValid = emailRegex.test(form.email);
+    if (!isValid) {
+      setCheckEmail(true); // Set checkEmail to true if the email is invalid
+    } else {
+      setCheckEmail(false); // Reset checkEmail if the email is valid
+    }
+
+    if (!form.firstName) {
+      setCheckName(true);
+    } else {
+      setCheckName(false);
+    }
+
+    if (!form.message) {
+      setCheckMessage(true);
+    } else {
+      setCheckMessage(false);
+    }
+  };
+
   return (
-    <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+    <div className="col">
+      <label className="row">
+        First name:
+        <input
+          value={form.firstName}
+          onChange={handleInputChange}
+          name="firstName"
+        />
+      </label>
+      <label className="row">
+        Your Email:
+        <input value={form.email} onChange={handleInputChange} name="email" />
+      </label>
+      <label className="row">
+        Message:
+        <input
+          value={form.message}
+          onChange={handleInputChange}
+          name="message"
+        />
+      </label>
+      <button className="btn btn-primary" type="button" onClick={handleSubmit}>
+        Submit
+      </button>
+      {/* Conditional rendering to display message for invalid email */}
+      {checkEmail && <p style={{ color: "red" }}>Invalid email submitted!</p>}
+      {CheckName && <p style={{ color: "red" }}>Invalid name submitted!</p>}
+      {CheckMessage && (
+        <p style={{ color: "red" }}>Invalid message submitted!</p>
+      )}
     </div>
   );
 }
