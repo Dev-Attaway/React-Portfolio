@@ -1,22 +1,26 @@
-// Bringing in the required import from 'react-router-dom'
+// Import the Outlet component from 'react-router-dom' which is responsible for rendering child routes
 import { Outlet } from "react-router-dom";
+
+// Import your custom components for navigation, footer, header, and CSS file
 import Nav from "./components/Navigation";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import "../src/App.css";
+import "../src/App.css"; // Import your CSS file for styling
 
+// Define the main App component
 function App() {
-  // The Outlet component will conditionally swap between the different pages according to the URL
+  // The App component renders the header, navigation, main content (determined by Outlet), and footer
   return (
     <>
-      <Header />
-      <Nav />
+      <Header /> {/* Render the header component */}
+      <Nav /> {/* Render the navigation component */}
       <main>
-        <Outlet />
-        <Footer />
+        <Outlet />{" "}
+        {/* Outlet component renders child routes based on the URL */}
+        <Footer /> {/* Render the footer component */}
       </main>
     </>
   );
 }
 
-export default App;
+export default App; // Export the App component for use in other parts of your application

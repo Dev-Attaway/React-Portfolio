@@ -1,6 +1,11 @@
+import React from "react"; // Make sure to import React at the top if you're using JSX
+
+// Define the ResumeLink component
 export default function ResumeLink() {
+  // Define the path to your resume file
   const resumeFilePath = "/attawayFullStackResume.pdf";
 
+  // Render the ResumeLink component
   return (
     <div>
       <section className="container p-3 vh-100 d-flex flex-start flex-column flex-wrap">

@@ -1,9 +1,10 @@
+// useLocation used to access the current URL location in a React component. It returns an object containing information about the current URL
 import { Link, useLocation } from "react-router-dom";
 import "../../src/App.css";
-// Here we are using object destructuring assignment to pluck off our variables from the props object
-// We assign them to their own variable names
+
 function NavTabs() {
   const currentPage = useLocation().pathname;
+  // Render the Navigation component
 
   return (
     <ul className="nav nav-tabs">

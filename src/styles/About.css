@@ -1,10 +1,9 @@
-.about
-{
-    height: 100vh;
+.about {
+  height: 100vh;
 }
 
 @media screen and (max-width: 375px) {
-.about {
+  .about {
     height: 100%;
-}
+  }
 }
