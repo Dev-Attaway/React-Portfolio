@@ -1,11 +1,16 @@
-# Dev-Attaway's Portfolio README
+# Dev-Attaway's Portfolio
 
 Welcome to Dev-Attaway's portfolio!
+
+
+![Porfolio](https://github.com/Dev-Attaway/React-Portfolio/assets/145059598/018c194e-627f-495f-b92d-4bf0c53339cf)
+
+
 
 ## Purpose
 
 This portfolio showcases Dev-Attaway's expertise in building single-page applications using React. 
-This will serve as a model for for resume implentations.
+This will serve as a model for resume implementations.
 
 ### Page Structure
 
@@ -46,7 +51,6 @@ Use the Contact form to get in touch with Dev-Attaway. The form includes fields 
 - Email address
 - Message
 
-Receive notifications when a field is left empty or when an invalid email address is entered.
 
 ### Resume Section
 
@@ -60,12 +64,9 @@ Access Dev-Attaway's resume, which includes:
 The footer includes:
 
 - Text or icon links to Dev-Attaway's GitHub and LinkedIn profiles.
-- Dev-Attaway's profile on a third platform (Stack Overflow, Twitter, etc.).
 
 ## Get in Touch
 
 Explore the portfolio and reach out to Dev-Attaway to discuss potential collaboration opportunities!
 
-Thank you for visiting!
-
-*This README provides an overview of Dev-Attaway's portfolio for employers interested in assessing their skills and experience.*
+*Thank you for visiting!*
