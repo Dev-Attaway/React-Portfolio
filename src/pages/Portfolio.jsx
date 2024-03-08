@@ -1,8 +1,15 @@
-import Project from "../components/Project"; // Assuming Project.js is in the same directory
+import Project from "../components/Project";
 
+// Define the Portfolio component
 export default function Portfolio() {
+  // Render the Portfolio component
   return (
+    /* Project component from the specified file path
+       has data manually inserted into the properties below
+       these properties then used within the project component
+    */
     <div className="portfolio mx-auto">
+      {/* Inserting data in the  */}
       <div className="projects my-3">
         <Project
           title="Weather App"
