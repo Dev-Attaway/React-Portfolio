@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import Nav from "./components/Navigation";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import "../src/App.css";
 
 function App() {
   // The Outlet component will conditionally swap between the different pages according to the URL
@@ -10,10 +11,10 @@ function App() {
     <>
       <Header />
       <Nav />
-      <main className="mx-3">
+      <main>
         <Outlet />
+        <Footer />
       </main>
-      <Footer />
     </>
   );
 }

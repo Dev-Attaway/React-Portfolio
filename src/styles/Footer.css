@@ -1,12 +1,12 @@
 .footer {
-  background: #f9b713;
-  height: 100px;
+  background-color: #f5f5f5;
+  padding: 20px;
 }
 
-.footer h1 {
-  margin: 0;
-  padding-top: 75px;
-  text-align: center;
-  color: white;
-  font-size: 3rem;
+.images {
+  width: 3rem;
+  height: auto;
+  object-fit: cover;
+  /* Align to the right side of the parent container */
+  /* Adjust the top position if needed */
 }

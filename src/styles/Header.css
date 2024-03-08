@@ -1,12 +1,11 @@
-.header {
-  background: #f9b713;
-  height: 200px;
+header {
+  background: linear-gradient(0.25turn, #512da8, #311b92);
+  height: 10vh;
+  display: flex;
+  align-items: center;
 }
 
-.header h1 {
-  margin: 0;
-  padding-top: 75px;
-  text-align: center;
-  color: white;
-  font-size: 3rem;
+header h1 {
+  font-family: "Courier New", Courier, monospace;
+  -webkit-text-fill-color: white;
 }
