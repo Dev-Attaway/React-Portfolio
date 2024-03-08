@@ -1,0 +1,8 @@
+.btn {
+  background-color: var(--lapis-lazuli);
+  color: var(--carolina-blue);
+}
+
+.btn:hover {
+  background-color: var(--tomato);
+}

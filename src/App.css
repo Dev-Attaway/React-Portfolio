@@ -1,7 +1,97 @@
-main {
-  background: linear-gradient(0.5turn, #ececec, #ffffff);
+/* SCSS RGB */
+:root {
+  --lapis-lazuli: rgba(51, 101, 138, 1);
+  --carolina-blue: rgba(134, 187, 216, 1);
+  --charcoal: rgba(47, 72, 88, 1);
+  --dutch-white: rgb(235, 241, 245);
+  --tomato: rgba(245, 93, 62, 1);
 }
 
+/* SCSS Gradient */
+:root {
+  --gradient-top: linear-gradient(
+    0deg,
+    #33658aff,
+    #86bbd8ff,
+    #2f4858ff,
+    #f4e8c1ff,
+    #f55d3eff
+  );
+  --gradient-right: linear-gradient(90deg, #33658aff, #86bbd8ff);
+  --gradient-bottom: linear-gradient(
+    180deg,
+    #33658aff,
+    #86bbd8ff,
+    #2f4858ff,
+    #f4e8c1ff,
+    #f55d3eff
+  );
+  --gradient-left: linear-gradient(
+    270deg,
+    #33658aff,
+    #86bbd8ff,
+    #2f4858ff,
+    #f4e8c1ff,
+    #f55d3eff
+  );
+  --gradient-top-right: linear-gradient(45deg, #86bbd8ff, #f4e8c1ff);
+  --gradient-top-nav: linear-gradient(45deg, #86bbd8ff, rgb(243, 243, 243));
+  --gradient-bottom-right: linear-gradient(
+    135deg,
+    #33658aff,
+    #86bbd8ff,
+    #2f4858ff,
+    #f4e8c1ff,
+    #f55d3eff
+  );
+  --gradient-top-left: linear-gradient(
+    225deg,
+    #33658aff,
+    #86bbd8ff,
+    #2f4858ff,
+    #f4e8c1ff,
+    #f55d3eff
+  );
+  --gradient-bottom-left: linear-gradient(
+    315deg,
+    #33658aff,
+    #86bbd8ff,
+    #2f4858ff,
+    #f4e8c1ff,
+    #f55d3eff
+  );
+  --gradient-radial: radial-gradient(
+    #33658aff,
+    #86bbd8ff,
+    #2f4858ff,
+    #f4e8c1ff,
+    #f55d3eff
+  );
+  --gradient-footer: linear-gradient(
+    225deg,
+    rgb(255, 255, 255),
+    rgb(190, 190, 190)
+  );
+}
+main {
+  background: var(--gradient-top-right);
+}
 .nav-tabs .nav-link.active {
-  background: linear-gradient(0turn, #ececec, #ffffff);
+  background: var(--gradient-top-right);
+  border-color: var(--carolina-blue);
+    box-shadow: none;
+}
+
+.nav {
+  background: var(--gradient-top-nav);
+  border-color: var(--carolina-blue);
+}
+
+.nav-link {
+  color: var(--charcoal);
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: var(--carolina-blue);
+  box-shadow: 2px 2px 5px var(--charcoal);
 }

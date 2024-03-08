@@ -1,4 +1,5 @@
 import { useState } from "react"; // Import the useState hook from React
+import "../styles/Contact.css";
 
 // Define the Contact component
 export default function Contact() {
@@ -92,11 +93,7 @@ export default function Contact() {
         )}
       </div>
 
-      <button
-        className="btn btn-primary m-3"
-        type="button"
-        onClick={handleSubmit}
-      >
+      <button className="btn m-3" type="button" onClick={handleSubmit}>
         Submit
       </button>
     </form>

@@ -1,5 +1,5 @@
 header {
-  background: linear-gradient(0.25turn, #512da8, #311b92);
+  background: var(--gradient-right);
   height: 10vh;
   display: flex;
   align-items: center;
